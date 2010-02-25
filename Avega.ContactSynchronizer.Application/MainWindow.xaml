@@ -1,0 +1,8 @@
+﻿<Window x:Class="Avega.ContactSynchronizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Button" Height="59" HorizontalAlignment="Left" Margin="20,24,0,0" Name="ActionButton" VerticalAlignment="Top" Width="130" Click="ActionButton_Click" />
+    </Grid>
+</Window>
