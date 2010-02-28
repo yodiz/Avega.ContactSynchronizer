@@ -45,6 +45,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -57,13 +58,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authentication.cs" />
-    <Compile Include="AvegaContact.cs" />
-    <Compile Include="HtmlTagReader.cs" />
+    <Compile Include="Model\AvegaContact.cs" />
+    <Compile Include="ContactDataFetchedEventArgs.cs" />
+    <Compile Include="Web\HtmlTagReader.cs" />
+    <Compile Include="Web\HtmlUtility.cs" />
+    <Compile Include="Web\HttpResponseWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IAvegaClientRepository.cs" />
+    <Compile Include="Repository\IntranetAvegaClientRepository.cs" />
+    <Compile Include="Service\Implementation\GoogleContactService.cs" />
     <Compile Include="Service\IAvegaContactService.cs" />
     <Compile Include="Service\Implementation\AvegaContactService.cs" />
+    <Compile Include="IWarnable.cs" />
+    <Compile Include="WarningEventArgs.cs" />
+    <Compile Include="SID.cs" />
     <Compile Include="SynchronizationStatus.cs" />
-    <Compile Include="WebSession.cs" />
+    <Compile Include="Web\IWebSession.cs" />
+    <Compile Include="Web\KeyValueCollection.cs" />
+    <Compile Include="Web\WebSession.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

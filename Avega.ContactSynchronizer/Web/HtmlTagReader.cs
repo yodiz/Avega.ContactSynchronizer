@@ -7,10 +7,15 @@ using System.Text.RegularExpressions;
 namespace Avega.ContactSynchronizer {
 
 	public class HtmlTag {
+		/// <summary>
+		/// Outer HTML of the tag
+		/// </summary>
 		public string Content { get; private set; }
+
+		/// <summary>
+		/// Data between start and end tag
+		/// </summary>
 		public string Data { get; private set; }
-
-
 
 		public HtmlTag(string tagContent, string data) {
 			Content = tagContent;
@@ -18,6 +23,9 @@ namespace Avega.ContactSynchronizer {
 		}
 	}
 
+	/// <summary>
+	/// Simple but limited HTMl forward-only parser
+	/// </summary>
 	public class HtmlTagReader {
 		private string _html;
 		private int _location;

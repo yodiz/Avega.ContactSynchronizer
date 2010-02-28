@@ -33,14 +33,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Google.GData.Client, Version=1.4.0.2, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Google Data API SDK\Redist\Google.GData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Contacts, Version=1.4.0.2, Culture=neutral, PublicKeyToken=7e065189dd4b982f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\Google Data API SDK\Redist\Google.GData.Contacts.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Extensions, Version=1.4.0.2, Culture=neutral, PublicKeyToken=0b4c5df2ebf20876, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq">
+      <HintPath>..\Dependencies\Moq\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Thought.vCards">
@@ -48,13 +62,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Unit\AvegaContactTest.cs" />
+    <Compile Include="Integration\Common.cs" />
+    <Compile Include="Integration\Repository\IntranetAvegaContactRepositoryTest.cs" />
+    <Compile Include="Integration\Service\GoogleContactServiceTest.cs" />
+    <Compile Include="Unit\Web\HttpResponseWrapperTest.cs" />
+    <Compile Include="Unit\Model\AvegaContactTest.cs" />
     <Compile Include="Integration\Service\AvegaContactServiceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Unit\Service\AvegaContactServiceTest.cs" />
-    <Compile Include="Unit\Service\Implementation\AvegaContactServiceTestImpl.cs" />
-    <Compile Include="Unit\WebSessionTest.cs" />
-    <Compile Include="WebSessionTest.cs" />
+    <Compile Include="Unit\Repository\IAvegaClientRepositoryTest.cs" />
+    <Compile Include="Unit\Service\IAvegaContactServiceTest.cs" />
+    <Compile Include="Integration\Web\WebSessionTest.cs" />
+    <Compile Include="Unit\Web\WebSessionTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Avega.ContactSynchronizer\Avega.ContactSynchronizer.csproj">
