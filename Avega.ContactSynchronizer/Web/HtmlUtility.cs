@@ -12,7 +12,7 @@ namespace Avega.ContactSynchronizer.Web {
 		/// <param name="html"></param>
 		/// <returns></returns>
 		public static KeyValueCollection ParseInputFieldsFromHtmlResponse(string html) {
-			if (string.IsNullOrWhiteSpace(html)) { return new KeyValueCollection(); }
+            if (string.IsNullOrEmpty(html)) { return new KeyValueCollection(); }
 
 			var dictionary = new KeyValueCollection();
 
@@ -23,7 +23,8 @@ namespace Avega.ContactSynchronizer.Web {
 				string name = HtmlTagReader.GetAttributeValueInTag(tagHtml, "name"); ;
 				string value = HtmlTagReader.GetAttributeValueInTag(tagHtml, "value");
 
-				if (!string.IsNullOrEmpty(name)) {
+                if (!string.IsNullOrEmpty(name))
+                {
 					dictionary.Add(name, value ?? string.Empty);
 				}
 			}

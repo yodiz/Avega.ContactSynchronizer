@@ -84,21 +84,23 @@ namespace Avega.ContactSynchronizer.Service {
 
 			contact.Phonenumbers.Clear();
 
-			if (!string.IsNullOrWhiteSpace(avegaContact.MobilePhone)) {
+			if (!string.IsNullOrEmpty(avegaContact.MobilePhone)) {
 				PhoneNumber phoneNumber = new PhoneNumber(avegaContact.MobilePhone);
 				phoneNumber.Primary = true;
 				phoneNumber.Rel = ContactsRelationships.IsMobile;
 				contact.Phonenumbers.Add(phoneNumber);
 			}
 
-			if (!string.IsNullOrWhiteSpace(avegaContact.OfficePhone)) {
+            if (!string.IsNullOrEmpty(avegaContact.OfficePhone))
+            {
 				PhoneNumber workPhone = new PhoneNumber(avegaContact.OfficePhone);
 				workPhone.Primary = false;
 				workPhone.Rel = ContactsRelationships.IsWork;
 				contact.Phonenumbers.Add(workPhone);
 			}
 
-			if (!string.IsNullOrWhiteSpace(avegaContact.Email)) {
+            if (!string.IsNullOrEmpty(avegaContact.Email))
+            {
 				contact.Emails.Clear();
 				EMail primaryEmail = new EMail(avegaContact.Email);
 				primaryEmail.Primary = true;

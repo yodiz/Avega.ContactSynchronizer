@@ -27,6 +27,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
+		ReleaseWinApp|Any CPU = ReleaseWinApp|Any CPU
+		ReleaseWinApp|Mixed Platforms = ReleaseWinApp|Mixed Platforms
+		ReleaseWinApp|x86 = ReleaseWinApp|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5A2DD562-EA3D-4FFA-900C-F8F412C90726}.Debug|Any CPU.ActiveCfg = Debug|x86
@@ -39,6 +42,11 @@ Global
 		{5A2DD562-EA3D-4FFA-900C-F8F412C90726}.Release|Mixed Platforms.Build.0 = Release|x86
 		{5A2DD562-EA3D-4FFA-900C-F8F412C90726}.Release|x86.ActiveCfg = Release|x86
 		{5A2DD562-EA3D-4FFA-900C-F8F412C90726}.Release|x86.Build.0 = Release|x86
+		{5A2DD562-EA3D-4FFA-900C-F8F412C90726}.ReleaseWinApp|Any CPU.ActiveCfg = ReleaseWinApp|x86
+		{5A2DD562-EA3D-4FFA-900C-F8F412C90726}.ReleaseWinApp|Mixed Platforms.ActiveCfg = ReleaseWinApp|x86
+		{5A2DD562-EA3D-4FFA-900C-F8F412C90726}.ReleaseWinApp|Mixed Platforms.Build.0 = ReleaseWinApp|x86
+		{5A2DD562-EA3D-4FFA-900C-F8F412C90726}.ReleaseWinApp|x86.ActiveCfg = ReleaseWinApp|x86
+		{5A2DD562-EA3D-4FFA-900C-F8F412C90726}.ReleaseWinApp|x86.Build.0 = ReleaseWinApp|x86
 		{F51C0925-0F14-480E-A881-BD5B5C74F0C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F51C0925-0F14-480E-A881-BD5B5C74F0C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F51C0925-0F14-480E-A881-BD5B5C74F0C3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -49,6 +57,11 @@ Global
 		{F51C0925-0F14-480E-A881-BD5B5C74F0C3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{F51C0925-0F14-480E-A881-BD5B5C74F0C3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{F51C0925-0F14-480E-A881-BD5B5C74F0C3}.Release|x86.ActiveCfg = Release|Any CPU
+		{F51C0925-0F14-480E-A881-BD5B5C74F0C3}.ReleaseWinApp|Any CPU.ActiveCfg = ReleaseWinApp|Any CPU
+		{F51C0925-0F14-480E-A881-BD5B5C74F0C3}.ReleaseWinApp|Any CPU.Build.0 = ReleaseWinApp|Any CPU
+		{F51C0925-0F14-480E-A881-BD5B5C74F0C3}.ReleaseWinApp|Mixed Platforms.ActiveCfg = ReleaseWinApp|Any CPU
+		{F51C0925-0F14-480E-A881-BD5B5C74F0C3}.ReleaseWinApp|Mixed Platforms.Build.0 = ReleaseWinApp|Any CPU
+		{F51C0925-0F14-480E-A881-BD5B5C74F0C3}.ReleaseWinApp|x86.ActiveCfg = ReleaseWinApp|Any CPU
 		{987CAB36-3831-4BB8-A17C-9C3BE51504FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{987CAB36-3831-4BB8-A17C-9C3BE51504FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{987CAB36-3831-4BB8-A17C-9C3BE51504FD}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -59,6 +72,10 @@ Global
 		{987CAB36-3831-4BB8-A17C-9C3BE51504FD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{987CAB36-3831-4BB8-A17C-9C3BE51504FD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{987CAB36-3831-4BB8-A17C-9C3BE51504FD}.Release|x86.ActiveCfg = Release|Any CPU
+		{987CAB36-3831-4BB8-A17C-9C3BE51504FD}.ReleaseWinApp|Any CPU.ActiveCfg = ReleaseWinApp|Any CPU
+		{987CAB36-3831-4BB8-A17C-9C3BE51504FD}.ReleaseWinApp|Any CPU.Build.0 = ReleaseWinApp|Any CPU
+		{987CAB36-3831-4BB8-A17C-9C3BE51504FD}.ReleaseWinApp|Mixed Platforms.ActiveCfg = ReleaseWinApp|Any CPU
+		{987CAB36-3831-4BB8-A17C-9C3BE51504FD}.ReleaseWinApp|x86.ActiveCfg = ReleaseWinApp|Any CPU
 		{1BCDE62D-5E2E-456C-93F9-DEE489A95FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1BCDE62D-5E2E-456C-93F9-DEE489A95FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BCDE62D-5E2E-456C-93F9-DEE489A95FDF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -69,6 +86,10 @@ Global
 		{1BCDE62D-5E2E-456C-93F9-DEE489A95FDF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{1BCDE62D-5E2E-456C-93F9-DEE489A95FDF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{1BCDE62D-5E2E-456C-93F9-DEE489A95FDF}.Release|x86.ActiveCfg = Release|Any CPU
+		{1BCDE62D-5E2E-456C-93F9-DEE489A95FDF}.ReleaseWinApp|Any CPU.ActiveCfg = ReleaseWinApp|Any CPU
+		{1BCDE62D-5E2E-456C-93F9-DEE489A95FDF}.ReleaseWinApp|Any CPU.Build.0 = ReleaseWinApp|Any CPU
+		{1BCDE62D-5E2E-456C-93F9-DEE489A95FDF}.ReleaseWinApp|Mixed Platforms.ActiveCfg = ReleaseWinApp|Any CPU
+		{1BCDE62D-5E2E-456C-93F9-DEE489A95FDF}.ReleaseWinApp|x86.ActiveCfg = ReleaseWinApp|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

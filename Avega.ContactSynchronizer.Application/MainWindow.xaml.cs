@@ -14,7 +14,6 @@ using System.Windows.Shapes;
 using Avega.ContactSynchronizer.Service;
 using Avega.ContactSynchronizer.Service.Implementation;
 using Avega.ContactSynchronizer.Repository;
-using System.Threading.Tasks;
 using System.Threading;
 
 namespace Avega.ContactSynchronizer {
@@ -41,12 +40,11 @@ namespace Avega.ContactSynchronizer {
 			};
 
 			this.Closing += (sender, e) => {
-				if (importTask != null && !importTask.IsCompleted) {
+				if (importTask != null && !importTask.IsAlive) {
 					SetResultText("Trying to abort import Task");
 					abortImport = true;
 
 					e.Cancel = true;
-					importTask.ContinueWith(x => this.Dispatcher.Invoke(new Action(() => { this.Close(); })));
 				}
 			};
 		}
@@ -62,8 +60,8 @@ namespace Avega.ContactSynchronizer {
 				);
 			}
 		}
-
-		private Task importTask;
+        
+		private Thread importTask;
 		private bool abortImport = false;
 
 
@@ -77,10 +75,13 @@ namespace Avega.ContactSynchronizer {
 			string avegaUsername = AvegaUsername.Text;
 			string avegaPassword = AvegaPassword.Password;
 
-			importTask = System.Threading.Tasks.Task.Factory.StartNew(() =>
-				ImportForMikael(googleUsername, googlePassword, avegaUsername, avegaPassword)
-				);
-			importTask.ContinueWith(x => this.Dispatcher.Invoke(new Action(() =>  ActionButton.IsEnabled = true)));
+
+            importTask = new Thread(new ThreadStart(() => {
+                ImportForMikael(googleUsername, googlePassword, avegaUsername, avegaPassword);
+                this.Dispatcher.Invoke(new Action(() => ActionButton.IsEnabled = true));
+            }));
+
+            importTask.Start();
 		}
 
 		public void SetResultText(string text) {
